@@ -1,6 +1,15 @@
 .App {
   text-align: center;
 }
+body{
+  background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  font-family: 'Inika', serif;
+  width: 100%;
+  height: 100%;
+}
+.border-gradient-purple {
+  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+}
 
 .App-logo {
   height: 40vmin;
