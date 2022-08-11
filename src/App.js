@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState, useEffect} from 'react'
 import logo from './images/logo.svg'
 import Paper from './images/icon-paper.svg'
 import Rock from './images/icon-rock.svg'
@@ -12,7 +12,7 @@ function App() {
   const [showModal, setShowModal] = React.useState(false);
   const [controlScore, setControlScore] = React.useState(0);
   const [option, setOption] = React.useState('')
-
+  
   const handlePlayAgain = () => {
     setOption('')
   }
