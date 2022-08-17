@@ -4,6 +4,7 @@ import Paper from './images/icon-paper.svg'
 import Rock from './images/icon-rock.svg'
 import Scissor from './images/icon-scissors.svg'
 import Rules from './images/image-rules.svg'
+import Triangle from './images/bg-triangle.svg'
 import './App.css';
 import Selected from './Selected'
 import Circle from './Circle'
@@ -42,7 +43,7 @@ function App() {
         <Selected handleScore={handleScore} option={option} handlePlayAgain={handlePlayAgain} /> :
         <div className='flex justify-center align-center mt-20'>
           <div className='relative'>
-            <img className='sm:w-[20rem] w-[15rem] h-[12rem] sm:h-[15rem]' src='/bg-triangle.svg' />
+            <img className='sm:w-[20rem] w-[15rem] h-[12rem] sm:h-[15rem]' src={Triangle} />
             <Circle color={'hsl(39, 89%, 40%)'} handleCircle={() => handleCircle('paper')} image={Paper} className={'shadow-inner-2xl cursor-pointer absolute left-[-40px] top-[-50px] bg-white sm:w-[10rem] sm:h-[10rem] w-[8rem] h-[8rem] border-[#EC9E0E] border-[20px] rounded-full flex'} />
             <Circle color={'hsl(230, 89%, 53%)'} handleCircle={() => handleCircle('rock')} image={Rock} className={'shadow-inner cursor-pointer absolute right-[-40px] top-[-50px] bg-white sm:w-[10rem] sm:h-[10rem] w-[8rem] h-[8rem] border-[20px] border-[#4865F4] rounded-full flex'} />
             <Circle color={'hsl(349, 71%, 43%)'} handleCircle={() => handleCircle('scissor')} image={Scissor} className={'shadow-inner cursor-pointer absolute  sm:right-[80px] right-[55px] top-[110px] sm:top-[130px]  bg-white sm:w-[10rem] sm:h-[10rem] w-[8rem] h-[8rem] border-[20px] border-[#DC2E4E] rounded-full flex'} />
